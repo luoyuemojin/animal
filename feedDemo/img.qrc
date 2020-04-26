@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/主界面.jpg</file>
+        <file>image/注册信息.jpg</file>
+        <file>image/chakan.jpg</file>
+        <file>image/注射疫苗.jpg</file>
+        <file>image/计数.jpg</file>
+        <file>image/称重.jpg</file>
+    </qresource>
+</RCC>
