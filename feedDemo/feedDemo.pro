@@ -21,31 +21,31 @@ SOURCES += main.cpp\
     serialrfid.cpp \
     yimiaoform.cpp \
     chuankouform.cpp \
-    zhuceform.cpp \
     chakanform.cpp \
     weightform.cpp \
-    jishuform.cpp
+    jishuform.cpp \
+    register.cpp
 
 HEADERS  += mainwindow.h \
     datastruct.h \
-    feedsql.h \
     jiezhongform.h \
     serialrfid.h \
     yimiaoform.h \
     chuankouform.h \
-    zhuceform.h \
     chakanform.h \
     weightform.h \
-    jishuform.h
+    jishuform.h \
+    winesql.h \
+    register.h
 
 FORMS    += mainwindow.ui \
     jiezhongform.ui \
     yimiaoform.ui \
     chuankouform.ui \
-    zhuceform.ui \
     chakanform.ui \
     weightform.ui \
-    jishuform.ui
+    jishuform.ui \
+    register.ui
 
 unix|win32: LIBS += -L$$PWD/ -lReadDLL
 

@@ -1,49 +1,47 @@
-#ifndef CHAKANFORM_H
-#define CHAKANFORM_H
+#ifndef ZHUCEFORM_H
+#define ZHUCEFORM_H
 
 #include <QWidget>
-#include <QMainWindow>
+#include <QMessageBox>
+#include <QSqlQuery>
+#include <QtSql>
 #include <QDebug>
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
 #include <QButtonGroup>
 #include <QRadioButton>
 #include <QGroupBox>
-#include <QMessageBox>
-#include <QSqlQuery>
-#include <QtSql>
 #include <QObject>
 #include "ReadDLL.h"
 #include "serialrfid.h"
 #include "winesql.h"
 #include "datastruct.h"
 namespace Ui {
-class seeForm;
+class Register;
 }
 
-class seeForm : public QWidget
+class Register : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit seeForm(QWidget *parent = 0);
-    ~seeForm();
-   WineSql *winesql;
-   void setWineSql( WineSql *f);
+    explicit Register(QWidget *parent = 0);
+    ~Register();
+    WineSql *winesql;
+    void setWineSql( WineSql *f);
     SerialRfid *ser;
     QSerialPort *serial;
     WineSql *wines;
     int isdan;
-    int i=1;
 private slots:
-    void on_chakanxinxi_clicked();
+    void on_zhucexinxitijaio_clicked();
 
-    void on_deletexinxi_clicked();
+    void on_onecard_clicked();
 
-    void on_clear_clicked();
+    void on_pushButton_3_clicked();
 
 private:
-    Ui::seeForm *ui;
+    //Ui::register *ui;
 };
 
-#endif // CHAKANFORM_H
+#endif // ZHUCEFORM_H

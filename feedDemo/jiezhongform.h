@@ -2,7 +2,7 @@
 #define JIEZHONGFORM_H
 
 #include <QWidget>
-#include "feedsql.h"
+#include "winesql.h"
 #include "serialrfid.h"
 #include <QVBoxLayout>
 namespace Ui {

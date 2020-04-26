@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include "serialrfid.h"
-#include "feedsql.h"
+#include "winesql.h"
 namespace Ui {
 class JishuForm;
 }

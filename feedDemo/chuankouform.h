@@ -14,7 +14,7 @@
 #include <QtSql>
 #include "ReadDLL.h"
 #include "serialrfid.h"
-#include "feedsql.h"
+#include "winesql.h"
 #include "datastruct.h"
 namespace Ui {
 class chuankouForm;

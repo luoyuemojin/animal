@@ -26,7 +26,7 @@
 #include "jishuform.h"
 #include "weightform.h"
 #include "yimiaoform.h"
-#include "zhuceform.h"
+#include "register.h"
 
 QT_BEGIN_NAMESPACE
 

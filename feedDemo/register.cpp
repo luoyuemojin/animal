@@ -1,17 +1,17 @@
-#include "zhuceform.h"
-#include "ui_zhuceform.h"
+#include "register.h"
+#include "ui_register.h"
 
-zhuceForm::zhuceForm(QWidget *parent) :
+Register::Register(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::zhuceForm)
+    ui(new Ui::Register)
 {
     ui->setupUi(this);
     ser = new SerialRfid;
-    feeds = new FeedSql;
+    wines = new WineSql;
 
    // setFixedSize(1000,800);
     ui->date->setCalendarPopup(true);
-    feeds->createConnection();
+    wines->createConnection();
     ui->zhucexinxitijaio->setStyleSheet("QPushButton{background-color:#63B8FF;color: white;   border-radius: 10px;  border: 2px groove gray; border-style: outset;}"
 
                                                "QPushButton:hover{background-color:white; color: #63B8FF;}"
@@ -36,34 +36,29 @@ zhuceForm::zhuceForm(QWidget *parent) :
 
 }
 
-zhuceForm::~zhuceForm()
+Register::~Register()
 {
     delete ui;
 }
 
-void zhuceForm::setFeedSql(FeedSql *f)
+void Register::setWineSql(WineSql *f)
 {
-    this->feedsql=f;
+    this->winesql=f;
 }
 
-void zhuceForm::on_zhucexinxitijaio_clicked()//注册信息
+void Register::on_zhucexinxitijaio_clicked()//注册信息
 {
-    AnimalInfo stru;
+      Wine stru;
 
      stru.uid=ser->getOneUID();
      //stru.uid="110";
+
      stru.name=ui->zhonglei->currentText();
      stru.weight=ui->tizhong->text().toDouble();
      QDate date = ui->date->date();
 
     stru.birth=date;
-    if(isdan==1)
-    {
-        stru.sex=1;
-    }
-   else{
-        stru.sex=2;
-      }
+
 
     qDebug()<<stru.uid<<endl;
     qDebug()<<stru.name<<endl;

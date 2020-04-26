@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include <QDebug>
-#include "feedsql.h"
+#include "winesql.h"
 #include <QList>
 namespace Ui {
 class YiMiaoForm;

@@ -7,7 +7,7 @@
 #include <jiezhongform.h>
 #include <yimiaoform.h>
 #include "chuankouform.h"
-#include "zhuceform.h"
+#include "register.h"
 #include "chakanform.h"
 namespace Ui {
 class MainWindow;

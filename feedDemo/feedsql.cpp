@@ -1,4 +1,4 @@
-#include "feedsql.h"
+#include "winesql.h"
 #include <QProcess>
 FeedSql::FeedSql()
 {   

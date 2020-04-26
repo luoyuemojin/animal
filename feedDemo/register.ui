@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>registerForm</class>
- <widget class="QWidget" name="registerForm">
+ <class>zhuceForm</class>
+ <widget class="QWidget" name="zhuceForm">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -94,8 +94,8 @@
   <widget class="QLabel" name="label_16">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>220</y>
+     <x>20</x>
+     <y>210</y>
      <width>120</width>
      <height>30</height>
     </rect>
@@ -106,7 +106,7 @@
     </font>
    </property>
    <property name="text">
-    <string>生产日期</string>
+    <string>生产日期日期</string>
    </property>
   </widget>
   <widget class="QDateEdit" name="date">
@@ -178,13 +178,13 @@
     <string>重置</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="number">
+  <widget class="QLineEdit" name="winenumber">
    <property name="geometry">
     <rect>
      <x>190</x>
-     <y>270</y>
+     <y>269</y>
      <width>100</width>
-     <height>50</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="maximumSize">
@@ -202,7 +202,7 @@
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>280</y>
      <width>60</width>
      <height>30</height>
@@ -217,14 +217,43 @@
     <string>数量</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>280</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>瓶/箱</string>
+   </property>
+  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>781</height>
+     <height>800</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-image: url(:/image/注册信息.jpg);</string>
@@ -233,69 +262,66 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>20</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>注册后就是有名字的小动物了</string>
+   </property>
+  </widget>
   <widget class="QLineEdit" name="winelei">
    <property name="geometry">
     <rect>
      <x>190</x>
      <y>130</y>
      <width>151</width>
-     <height>41</height>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>277</y>
-     <width>81</width>
+     <x>20</x>
+     <y>330</y>
+     <width>111</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>14</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>瓶/箱</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>340</y>
-     <width>81</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>价值</string>
+    <string>单价</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="winevalue">
    <property name="geometry">
     <rect>
      <x>190</x>
-     <y>340</y>
+     <y>330</y>
      <width>101</width>
-     <height>51</height>
+     <height>41</height>
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>350</y>
-     <width>81</width>
-     <height>31</height>
+     <y>330</y>
+     <width>101</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="font">
@@ -317,13 +343,14 @@
   <zorder>zhucexinxitijaio</zorder>
   <zorder>onecard</zorder>
   <zorder>pushButton_3</zorder>
-  <zorder>number</zorder>
+  <zorder>winenumber</zorder>
   <zorder>label_14</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_3</zorder>
   <zorder>winelei</zorder>
   <zorder>label_4</zorder>
-  <zorder>label_5</zorder>
   <zorder>winevalue</zorder>
-  <zorder>label_6</zorder>
+  <zorder>label_5</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -6,10 +6,10 @@
 #include <QDebug>
 #include <QList>
 #include "datastruct.h"
-class FeedSql
+class WineSql
 {
 public:
-    FeedSql();
+    WineSql();
 private:
     QSqlDatabase db;
     QSqlQuery *query;
@@ -17,9 +17,9 @@ public:
      //链接操作
      bool createConnection();
      //动物操作
-     bool addAnimal(AnimalInfo ani);//需实现
-     bool delAnimal(QString uid);   //需实现
-     AnimalInfo *getAnimalInfo(QString uid); //需实现
+     bool addWine(Wine ani);//添加酒
+     bool delWine(QString uid);   //删除酒
+     Wine *getWine(QString uid); //查看酒
      bool setAnimalWeight(QString uid,double weight);   //需实现
      //疫苗操作
      bool addVac(VacInfo vac);
